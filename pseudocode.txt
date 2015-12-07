@@ -1,0 +1,30 @@
+*1. Open text file
+*2. Read text file
+3. Turn plain text into Braille text
+   *a. Create a hash of letters
+   *b. For each plain text letter, write braille letter on three lines
+   *c. Support capitalization
+   d. Support numbers
+   *e. Constrain braille file to 80 characters wide
+*4. Write braille text in new text file
+*5. Write test files, TDD
+
+Steps:
+*1. Turn one letter into 2x3 braille letter
+*2. Turn two letters into braille letters
+*3. Turn many letters into braille letters
+*4. Make a capitalized letter
+*5. Support 80 character length
+6. Turn braille letters into plain letters
+   *a. Read braille file
+   *b. Change single string into three strings of braille by separating at the new lines
+   *c. Slice! off the first two characters from each string and join into a single string of 6 characters
+   *d. Get the corresponding letter using the inverted map
+   *e. Make a new string of plain letters
+   *f. Output plain letters to the message text file
+   *g. Account for capital letters
+   *h. Fix output message character length
+   *i. Account for messages > 80 characters
+7. Support numbers
+8. Support contractions
+9. Support new lines
