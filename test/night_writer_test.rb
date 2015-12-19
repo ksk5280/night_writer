@@ -1,4 +1,4 @@
-require 'minitest'
+require 'minitest/autorun'
 require 'night_writer'
 
 class NightWriterTest < Minitest::Test

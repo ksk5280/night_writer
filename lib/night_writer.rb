@@ -2,6 +2,7 @@
 require_relative 'file_handler'
 require_relative 'plain_to_braille_map'
 require_relative 'number_to_braille_map'
+require_relative 'contraction_map'
 require 'pry'
 require 'pry-byebug'
 
@@ -85,9 +86,7 @@ class NightWriter
 
   def encode_file_to_plain
     braille_message = file_handler.read
-    p braille_message
     plain_message = encode_to_plain(braille_message)
-    p plain_message
     puts "  Created #{file_handler.write_file.inspect} containing #{plain_message.length} characters"
     output_message_to_file(plain_message)
   end
